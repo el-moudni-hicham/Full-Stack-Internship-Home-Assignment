@@ -78,6 +78,22 @@ Respect the following design flow:
 - **Frontend-Backend Integration**: Connected the frontend with the backend through RESTful APIs, ensuring seamless data flow between the two.
 - **User Interface**: Focused on creating an intuitive and responsive user interface, enhancing user experience.
 
+#### Interfaces Result
+- **Interface-1**: Contain an upload button.
+  
+![image](https://github.com/el-moudni-hicham/Full-Stack-Internship-Home-Assignment/assets/85403056/5fb9bdaf-fa2c-4200-bd0b-de9a34ea4282)
+
+![image](https://github.com/el-moudni-hicham/Full-Stack-Internship-Home-Assignment/assets/85403056/f5d65d33-d695-4c90-85c9-6c1f123a0c1a)
+
+
+- **Interface-2**: The Process button is added when you choose a file.
+
+![image](https://github.com/el-moudni-hicham/Full-Stack-Internship-Home-Assignment/assets/85403056/20848d90-47a9-40a4-8797-be7574babf74)
+
+- **Interface-3**: 2 Tables showing the processing results.
+
+![image](https://github.com/el-moudni-hicham/Full-Stack-Internship-Home-Assignment/assets/85403056/0e8ea082-de2a-4146-8e3d-b3d1eea52999)
+
 ### Testing
 - Conducted unit testing for the Java service using JUnit to ensure reliability and accuracy of data processing.
   
