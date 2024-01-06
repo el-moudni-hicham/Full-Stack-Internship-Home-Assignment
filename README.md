@@ -60,3 +60,62 @@ Respect the following design flow:
 ## Bonus points
 - Implement your own CSV file parser instead of using a library.
 - Use design patterns.
+
+
+## Assignment Solution 
+
+### 1. Approach
+
+### Backend Development
+- **Spring Boot Setup**: Initialized a Spring Boot project to handle CSV file processing and API creation.
+- **CSV Parsing**: Implemented a service to read and parse the `employees.csv` file. This service extracts data into Employee and SalarySummary models.
+- **Data Processing**: Added functionality to calculate average salaries for each job title and compile a list of employee details.
+- **API Endpoints**: Created RESTful endpoints to handle file uploads and provide processed data to the frontend.
+
+### Frontend Development
+- **Next.js Setup**: Established a Next.js project with React for the user interface.
+- **UI Components**: Developed components for file upload, data display, and navigation. Integrated state management for handling file uploads and displaying results.
+- **Frontend-Backend Integration**: Connected the frontend with the backend through RESTful APIs, ensuring seamless data flow between the two.
+- **User Interface**: Focused on creating an intuitive and responsive user interface, enhancing user experience.
+
+### Testing
+- Conducted unit testing for the Java service using JUnit to ensure reliability and accuracy of data processing.
+  
+### 2. Running the Project
+
+### Prerequisites
+- Java 17
+- Node.js v20.10.0
+
+### Backend Setup
+1. Navigate to the backend project directory.
+2. Build the project using:
+   
+   ```
+   ./mvnw clean install
+   ```
+   
+3. Run the Spring Boot application:
+   
+   ```
+   ./mvnw spring-boot:run
+   ```
+
+### Frontend Setup
+1. Navigate to the frontend project directory.
+2. Install the necessary dependencies:
+   
+   ```
+   npm install
+   ```
+3. Start the Next.js application:
+   
+   ```
+   npm run dev
+   ```
+
+### Using the Application
+
+1. Open the frontend application in a web browser at `localhost:3000`.
+2. Upload the `employees.csv` file using the provided upload button.
+3. View the processed data in the displayed tables.
