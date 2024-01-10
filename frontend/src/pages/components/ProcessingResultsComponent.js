@@ -33,7 +33,7 @@ const ProcessingResultsComponent = ({ employees, jobTitleAverages }) => {
 
   // Go to next or previous page
   const nextPage = () =>
-    setCurrentPage((prev) => (prev + 1 > pageNumbers.length ? prev : prev + 1));
+    setCurrentPage((prev) => (prev + 1 > pageNumbers.length ? prev + 1 : prev));
   const prevPage = () =>
     setCurrentPage((prev) => (prev - 1 < 1 ? prev : prev - 1));
 

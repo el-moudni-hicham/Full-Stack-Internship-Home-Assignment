@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import FileUploadComponent from "../components/FileUploadComponent";
-import ProcessingResultsComponent from "../components/ProcessingResultsComponent";
+import FileUploadComponent from "./components/FileUploadComponent";
+import ProcessingResultsComponent from "./components/ProcessingResultsComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { getEmployees, getSummary } from "./api/csvapi";
 
@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <div>
-      <div class="alert alert-success  mb-4">
+      <div class="mb-4 display-9 p-2 m-2" >
         <b>CSV Parser</b>
       </div>
 

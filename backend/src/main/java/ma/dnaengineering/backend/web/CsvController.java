@@ -19,16 +19,17 @@ public class CsvController {
         this.csvParserService = csvParserService;
     }
 
-    //@GetMapping("/parse")
     @PostMapping("/parse")
     public ResponseEntity<List<Employee>> parseCsvAndReturnList(@RequestParam("file") MultipartFile file) {
-        List<Employee> employees = csvParserService.parseCsvAndReturnList(file);
+        csvParserService.saveEmployeesData(file);
+        List<Employee> employees = csvParserService.getAllEmployees();
         return new ResponseEntity<>(employees, HttpStatus.OK);
     }
 
     @PostMapping("/summary")
     public ResponseEntity<Map<String, Double>> getAverageSalarySummary(@RequestParam("file") MultipartFile file) {
-        List<Employee> employees = csvParserService.parseCsvAndReturnList(file);
+        csvParserService.saveEmployeesData(file);
+        List<Employee> employees = csvParserService.getAllEmployees();
         Map<String, Double> averageSalaryMap = csvParserService.calculateAverageSalary(employees);
         return new ResponseEntity<>(averageSalaryMap, HttpStatus.OK);
     }
