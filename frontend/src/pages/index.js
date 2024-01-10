@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <div>
-      <div class="mb-4 display-9 p-2 m-2" >
+      <div className="mb-4 display-9 p-2 m-2" >
         <b>CSV Parser</b>
       </div>
 
