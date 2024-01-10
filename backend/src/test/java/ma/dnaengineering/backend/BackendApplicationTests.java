@@ -37,9 +37,10 @@ class BackendApplicationTests {
 		MultipartFile file = new MockMultipartFile("data", "filename.csv", "text/plain", "id,employee_name,job_title,salary\n1,John Doe,Developer,60000\n2,Jane Doe,Manager,80000".getBytes());
 
 		// Act
-		List<Employee> result = csvParserService.parseCsvAndReturnList(file);
+		csvParserService.saveEmployeesData(file);
+		List<Employee> result = csvParserService.getAllEmployees();
 
-		// Assert
+				// Assert
 		assertEquals(2, result.size());
 		assertEquals("John Doe", result.get(0).getName());
 		assertEquals("Developer", result.get(0).getJobTitle());
